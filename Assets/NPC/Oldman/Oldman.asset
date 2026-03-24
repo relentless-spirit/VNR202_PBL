@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f6fc0b43876024abe7bca8860fd3bf, type: 3}
+  m_Name: Oldman
+  m_EditorClassIdentifier: 
+  npcName: 
+  npcPortrait: {fileID: 21300000, guid: 39b2466186b90034e8131247796ced45, type: 3}
+  dialogueLines:
+  - "Xin ch\xE0o con!!!"
+  - "Ta l\xE0 tr\u01B0\u1EDFng l\xE0ng."
+  - "Ta c\xF3 vi\u1EC7c c\u1EA7n con h\u1ED7 tr\u1EE3. H\xE3y gi\xFAp ta \u0111i
+    t\xECm l\u1EA1i c\xE1c truy\u1EC1n \u0111\u01A1n t\u1EEB nh\u1EEFng ng\u01B0\u1EDDi
+    d\xE2n kh\xE1c."
+  - "Sau khi con t\u1EADp h\u1EE3p \u0111\u1EE7 3 truy\u1EC1n \u0111\u01A1n hay \u0111i
+    th\u1EB3ng v\xE0o r\u1EEBng v\xE0 t\xECm t\u1EDBi hang \u0111\u1ED9ng. \u0110\xF3
+    l\xE0 th\u1EE9 con \u0111ang t\xECm "
+  autoProgressLines: 01010100
+  autoProgressDelay: 0.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1
