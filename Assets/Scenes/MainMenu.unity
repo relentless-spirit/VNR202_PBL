@@ -206,3 +206,59 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &800000001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800000002}
+  - component: {fileID: 800000003}
+  m_Layer: 0
+  m_Name: MainMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &800000002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800000001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &800000003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8b9c0d1e2f3456789012345678abcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backdropBase: {r: 0.11, g: 0.08, b: 0.06, a: 1}
+  parchmentWash: {r: 0.72, g: 0.58, b: 0.38, a: 0.09}
+  vignetteTop: {r: 0.42, g: 0.28, b: 0.14, a: 0.28}
+  vignetteBottom: {r: 0.05, g: 0.02, b: 0.02, a: 0.62}
+  centerGlow: {r: 0.75, g: 0.55, b: 0.28, a: 0.07}
+  accentStripe: {r: 0.72, g: 0.55, b: 0.22, a: 0.92}
+  accentStripeInner: {r: 0.2, g: 0.12, b: 0.08, a: 0.85}
+  cardTint: {r: 0.22, g: 0.17, b: 0.12, a: 0.78}
+  cardBorder: {r: 0.55, g: 0.4, b: 0.22, a: 0.55}
+  primaryButton: {r: 0.48, g: 0.14, b: 0.14, a: 1}
+  primaryButtonHover: {r: 0.62, g: 0.2, b: 0.18, a: 1}
+  secondaryButton: {r: 0.94, g: 0.88, b: 0.78, a: 0.32}
+  secondaryButtonHover: {r: 0.96, g: 0.9, b: 0.8, a: 0.45}
