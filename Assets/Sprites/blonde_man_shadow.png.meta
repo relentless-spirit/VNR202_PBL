@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blonde_man_idle_0
+      name: idle_down_0
       rect:
         serializedVersion: 2
         x: 9
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_idle_1
+      name: idle_down_1
       rect:
         serializedVersion: 2
         x: 41
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__idle_2
+      name: idle_down_2
       rect:
         serializedVersion: 2
         x: 73
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_idle_3
+      name: idle_down_3
       rect:
         serializedVersion: 2
         x: 105
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__left_side_idle_0
+      name: idle_left_0
       rect:
         serializedVersion: 2
         x: 9
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__left_side_idle_1
+      name: idle_left_1
       rect:
         serializedVersion: 2
         x: 41
@@ -223,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__left_side_idle_2
+      name: idle_left_2
       rect:
         serializedVersion: 2
         x: 73
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__left_side_idle_3
+      name: idle_left_3
       rect:
         serializedVersion: 2
         x: 105
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__right_side_idle_0
+      name: idle_right_0
       rect:
         serializedVersion: 2
         x: 10
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__right_side_idle_1
+      name: idle_right_1
       rect:
         serializedVersion: 2
         x: 42
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__right_side_idle_2
+      name: idle_right_2
       rect:
         serializedVersion: 2
         x: 74
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__right_side_idle_3
+      name: idle_right_3
       rect:
         serializedVersion: 2
         x: 106
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__back_side_idle_0
+      name: idle_up_0
       rect:
         serializedVersion: 2
         x: 9
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__back_side_idle_1
+      name: idle_up_1
       rect:
         serializedVersion: 2
         x: 41
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__back_side_idle_2
+      name: idle_up_2
       rect:
         serializedVersion: 2
         x: 73
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man__back_side_idle_3
+      name: idle_up_3
       rect:
         serializedVersion: 2
         x: 105
@@ -433,7 +433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_forward_0
+      name: walk_down_0
       rect:
         serializedVersion: 2
         x: 9
@@ -454,7 +454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_forward_1
+      name: walk_down_1
       rect:
         serializedVersion: 2
         x: 41
@@ -475,7 +475,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_forward_2
+      name: walk_down_2
       rect:
         serializedVersion: 2
         x: 73
@@ -496,7 +496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_forward_3
+      name: walk_down_3
       rect:
         serializedVersion: 2
         x: 105
@@ -517,7 +517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_left_0
+      name: walk_left_0
       rect:
         serializedVersion: 2
         x: 9
@@ -538,7 +538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_left_1
+      name: walk_left_1
       rect:
         serializedVersion: 2
         x: 41
@@ -559,7 +559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_left_2
+      name: walk_left_2
       rect:
         serializedVersion: 2
         x: 73
@@ -580,7 +580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_left_3
+      name: walk_left_3
       rect:
         serializedVersion: 2
         x: 105
@@ -601,7 +601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_right_0
+      name: walk_right_0
       rect:
         serializedVersion: 2
         x: 10
@@ -622,7 +622,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_right_1
+      name: walk_right_1
       rect:
         serializedVersion: 2
         x: 42
@@ -643,7 +643,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_right_2
+      name: walk_right_2
       rect:
         serializedVersion: 2
         x: 74
@@ -664,7 +664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_right_3
+      name: walk_right_3
       rect:
         serializedVersion: 2
         x: 106
@@ -685,7 +685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_back_0
+      name: walk_up_0
       rect:
         serializedVersion: 2
         x: 9
@@ -706,7 +706,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_back_1
+      name: walk_up_1
       rect:
         serializedVersion: 2
         x: 41
@@ -727,7 +727,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_back_2
+      name: walk_up_2
       rect:
         serializedVersion: 2
         x: 73
@@ -748,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blonde_man_moveving_back_3
+      name: walk_up_3
       rect:
         serializedVersion: 2
         x: 105
@@ -779,38 +779,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blonde_man__back_side_idle_0: -829420947
-      blonde_man__back_side_idle_1: -481009125
-      blonde_man__back_side_idle_2: -1928919219
-      blonde_man__back_side_idle_3: -1668052804
-      blonde_man__idle_2: 934854559
-      blonde_man__left_side_idle_0: -504632553
-      blonde_man__left_side_idle_1: 744224639
-      blonde_man__left_side_idle_2: -893260549
-      blonde_man__left_side_idle_3: -366375573
-      blonde_man__right_side_idle_0: 914535563
-      blonde_man__right_side_idle_1: -1705996038
-      blonde_man__right_side_idle_2: 1482359204
-      blonde_man__right_side_idle_3: -1774345532
-      blonde_man_idle_0: -1096847976
-      blonde_man_idle_1: -1355837334
-      blonde_man_idle_3: -1307696645
-      blonde_man_moveving_back_0: -1424930054
-      blonde_man_moveving_back_1: 1291021832
-      blonde_man_moveving_back_2: -1095678188
-      blonde_man_moveving_back_3: -1018253746
-      blonde_man_moveving_forward_0: -1237222482
-      blonde_man_moveving_forward_1: 740766466
-      blonde_man_moveving_forward_2: 447948272
-      blonde_man_moveving_forward_3: -748534183
-      blonde_man_moveving_left_0: 1817105818
-      blonde_man_moveving_left_1: -891722661
-      blonde_man_moveving_left_2: -976017926
-      blonde_man_moveving_left_3: -156679360
-      blonde_man_moveving_right_0: 1069038764
-      blonde_man_moveving_right_1: 6250845
-      blonde_man_moveving_right_2: -900766775
-      blonde_man_moveving_right_3: 215423063
+      idle_down_0: -1096847976
+      idle_down_1: -1355837334
+      idle_down_2: 934854559
+      idle_down_3: -1307696645
+      idle_left_0: -504632553
+      idle_left_1: 744224639
+      idle_left_2: -893260549
+      idle_left_3: -366375573
+      idle_right_0: 914535563
+      idle_right_1: -1705996038
+      idle_right_2: 1482359204
+      idle_right_3: -1774345532
+      idle_up_0: -829420947
+      idle_up_1: -481009125
+      idle_up_2: -1928919219
+      idle_up_3: -1668052804
+      walk_down_0: -1237222482
+      walk_down_1: 740766466
+      walk_down_2: 447948272
+      walk_down_3: -748534183
+      walk_left_0: 1817105818
+      walk_left_1: -891722661
+      walk_left_2: -976017926
+      walk_left_3: -156679360
+      walk_right_0: 1069038764
+      walk_right_1: 6250845
+      walk_right_2: -900766775
+      walk_right_3: 215423063
+      walk_up_0: -1424930054
+      walk_up_1: 1291021832
+      walk_up_2: -1095678188
+      walk_up_3: -1018253746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

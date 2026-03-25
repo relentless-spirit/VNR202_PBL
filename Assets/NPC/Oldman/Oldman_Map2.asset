@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f6fc0b43876024abe7bca8860fd3bf, type: 3}
+  m_Name: Oldman_Map2
+  m_EditorClassIdentifier: 
+  npcName: 
+  npcPortrait: {fileID: 0}
+  dialogueLines:
+  - "Xin ch\xE0o b\u1EA1n!!!"
+  - "Ta l\xE0 tr\u01B0\u1EDFng l\xE0ng."
+  - "Ta c\u1EA7n b\u1EA1n h\u1ED7 tr\u1EE3 thu th\u1EADp c\xE1c bao g\u1EA1o t\u1EEB
+    ng\u01B0\u1EDDi d\xE2n."
+  - "!!!! \u0110\u1EB7c bi\u1EC7t quan tr\u1ECDng, h\xE3y n\xE9 tr\xE1nh c\xE1c t\xEAn
+    l\xEDnh \u0111i tu\u1EA7n \u0111\u1EC3 kh\xF4ng b\u1ECB b\u1EAFt v\xE0 t\u1ECBch
+    thu c\xE1c bao g\u1EA1o!!!!!"
+  autoProgressLines: 
+  autoProgressDelay: 0.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 0}
+  voicePitch: 1

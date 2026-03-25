@@ -1,21 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public Rigidbody2D rb;
-    Vector2 movement;
     public Animator animator;
-    
-    // Update is called once per frame
+
+    private Vector2 movement;
+
+    // 🔥 hướng cuối cùng
+    private float lastInputX;
+    private float lastInputY;
+
+    void Start()
+    {
+        // 👉 mặc định đứng quay xuống
+        lastInputY = -1f;
+    }
+
     void Update()
     {
-        // Reset before reading input to ensure speed goes to zero when keys are released
+        // 🔥 khóa khi pause
+        if (PauseController.IsGamePaused)
+        {
+            movement = Vector2.zero;
+            UpdateAnimator();
+            return;
+        }
+
         movement = Vector2.zero;
 
-        // Enforce single-axis handling with requested mapping
+        // 🎮 input (1 hướng duy nhất)
         if (Input.GetKey(KeyCode.W))
         {
             movement.y = 1f;
@@ -33,13 +49,42 @@ public class PlayerMovement : MonoBehaviour
             movement.x = -1f;
         }
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        // 🔥 lưu hướng cuối
+        if (movement != Vector2.zero)
+        {
+            lastInputX = movement.x;
+            lastInputY = movement.y;
+        }
+
+        UpdateAnimator();
     }
-    
+
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * (speed * Time.fixedDeltaTime));
+    }
+
+    // 🎬 cập nhật animation
+    void UpdateAnimator()
+    {
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        animator.SetFloat("LastInputX", lastInputX);
+        animator.SetFloat("LastInputY", lastInputY);
+    }
+
+    // 🔥 OPTIONAL: khóa di chuyển khi bị bắt
+    public void DisableMovement(float time)
+    {
+        StartCoroutine(DisableMoveCoroutine(time));
+    }
+
+    IEnumerator DisableMoveCoroutine(float time)
+    {
+        enabled = false;
+        yield return new WaitForSeconds(time);
+        enabled = true;
     }
 }

@@ -1,35 +1,35 @@
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
 public class PlayerItemCollector : MonoBehaviour
 {
-    [Header("UI Cài đặt")]
-    public TMP_Text countText; // Kéo dòng Text hiển thị số lượng vào đây
-    
-    private int truyenDonCount = 0;
-    private int maxTruyenDon = 3;
-    
+    [Header("UI")]
+    public TMP_Text countText;
+
+    [Header("Config")]
+    public int maxItem = 3;
+    public string itemName = "Truyền đơn";
+
+    [HideInInspector]
+    public int currentCount = 0;
+
     private void Start()
     {
+        currentCount = 0;
         UpdateUIText();
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Item")) return;
 
-        // 🔥 chặn double trigger
-        if (!collision.gameObject.activeSelf) return;
+        Debug.Log("Nhặt " + itemName);
 
-        Debug.Log("Nhặt item");
-
-        collision.gameObject.SetActive(false); // 🔥 disable ngay lập tức
-
-        ChiefNPC.collectedLeaflets++;
-        UpdateUIText();
-
+        // 🔥 xóa luôn là đủ
         Destroy(collision.gameObject);
+
+        currentCount++;
+        UpdateUIText();
     }
 
     private void UpdateUIText()
@@ -38,14 +38,17 @@ public class PlayerItemCollector : MonoBehaviour
 
         string result = "";
 
-        for (int i = 0; i < maxTruyenDon; i++)
+        for (int i = 0; i < maxItem; i++)
         {
-            if (i < ChiefNPC.collectedLeaflets)
-                result += "[X] ";
-            else
-                result += "[ ] ";
+            result += (i < currentCount) ? "[X] " : "[ ] ";
         }
 
-        countText.text = result;
+        countText.text = $"{itemName}: {currentCount}/{maxItem}\n{result}";
+    }
+
+    public void ResetItems()
+    {
+        currentCount = 0;
+        UpdateUIText();
     }
 }
