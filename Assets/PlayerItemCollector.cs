@@ -23,13 +23,23 @@ public class PlayerItemCollector : MonoBehaviour
     {
         if (!collision.CompareTag("Item")) return;
 
+        // 🔥 chặn nhặt quá số lượng
+        if (currentCount >= maxItem)
+        {
+            Debug.Log("Đã đủ " + itemName);
+            return;
+        }
+
         Debug.Log("Nhặt " + itemName);
 
-        // 🔥 xóa luôn là đủ
-        Destroy(collision.gameObject);
+        // 🔥 chống double trigger (nếu collider chồng nhau)
+        if (!collision.gameObject.activeSelf) return;
+        collision.gameObject.SetActive(false);
 
         currentCount++;
         UpdateUIText();
+
+        Destroy(collision.gameObject);
     }
 
     private void UpdateUIText()

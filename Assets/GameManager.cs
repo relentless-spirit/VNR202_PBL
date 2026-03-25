@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
   [SerializeField] private Transform gameTransform;
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour {
   private int size;
   private bool shuffling = false;
 
+  public string winSceneName = "MainMenu";
+  private bool hasWon = false;
+  
   // Create the game setup with size x size pieces.
   private void CreateGamePieces(float gapThickness) {
     // This is the width of each tile.
@@ -56,10 +60,11 @@ public class GameManager : MonoBehaviour {
   // Update is called once per frame
   void Update() {
     // Check for completion.
-    if (!shuffling && CheckCompletion()) {
-      shuffling = true;
-      StartCoroutine(WaitShuffle(0.5f));
-    }
+      if (!hasWon && CheckCompletion())
+      {
+        hasWon = true;
+        StartCoroutine(WinAndLoad());
+      }
 
     // On click send out ray to see if we click a piece.
     if (Input.GetMouseButtonDown(0)) {
@@ -131,5 +136,15 @@ public class GameManager : MonoBehaviour {
         count++;
       }
     }
+  }
+  
+  private IEnumerator WinAndLoad()
+  {
+    Debug.Log("WIN!");
+
+    // 🔥 delay để người chơi thấy hoàn thành
+    yield return new WaitForSeconds(1.5f);
+
+    SceneManager.LoadScene(winSceneName);
   }
 }
