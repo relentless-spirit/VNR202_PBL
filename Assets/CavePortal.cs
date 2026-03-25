@@ -4,24 +4,37 @@ using TMPro;
 
 public class CavePortal : MonoBehaviour
 {
-    public string nextSceneName = "Map2";
-    public int requiredLeaflets = 3;
+    [Header("Scene")]
+    public string nextSceneName;
+
+    [Header("Requirement")]
+    public int requiredItem = 3;
+    public string itemName = "vật phẩm";
 
     [Header("UI Notify")]
-    public GameObject notifyPanel;   // cả khung (ảnh)
-    public TMP_Text notifyText;      // chữ bên trong
+    public GameObject notifyPanel;
+    public TMP_Text notifyText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
 
-        if (ChiefNPC.collectedLeaflets < requiredLeaflets)
+        // 🔥 lấy collector từ player
+        PlayerItemCollector collector = collision.GetComponent<PlayerItemCollector>();
+
+        if (collector == null)
         {
-            ShowNotify("Bạn cần 3 truyền đơn để vào hang!");
+            Debug.LogError("Player chưa có PlayerItemCollector!");
             return;
         }
 
-        ShowNotify("Đang tiến vào hang...");
+        if (collector.currentCount < requiredItem)
+        {
+            ShowNotify($"Bạn cần {requiredItem} {itemName}!");
+            return;
+        }
+
+        ShowNotify("Đang chuyển khu vực...");
         Invoke(nameof(LoadScene), 1f);
     }
 

@@ -240,8 +240,8 @@ public class QuizNPC : MonoBehaviour
         }
     }
     
-    public void ResetGame()
+    public void ResetNPC()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey(gameObject.name); // 🔥 xoá trạng thái đã nhận thưởng
     }
 }
